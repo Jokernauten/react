@@ -1,0 +1,12 @@
+version: '3'
+  services:
+    react:
+      build: /home/joker/github/react/
+      ports:
+        - "4200:4200"
+      network_mode: "host"
+
+    java:
+      build: /home/joker/github/java/
+      ports:
+        - "8080:8080"
